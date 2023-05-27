@@ -1,0 +1,79 @@
+{
+  "seller": [
+    {
+      "name": "Sajal Devnath",
+      "email": "sajaldevnath96@gmail.com",
+      "password": "abc2D",
+      "id": 1
+    },
+    {
+      "name": "Sajal Devnath",
+      "email": "sajaldevnath96@gmail.com",
+      "password": "789456123",
+      "id": 2
+    },
+    {
+      "name": "tony",
+      "email": "tony@gmail.com",
+      "password": "456",
+      "id": 3
+    },
+    {
+      "name": "peter",
+      "email": "peter@gmail.com",
+      "password": "153",
+      "id": 4
+    },
+    {
+      "name": "bruce",
+      "email": "bruce@gmail.com",
+      "password": "486",
+      "id": 5
+    },
+    {
+      "name": "natasha",
+      "email": "natasha@gmail.com",
+      "password": "748596",
+      "id": 6
+    },
+    {
+      "name": "chandan",
+      "email": "chandan@gmail.com",
+      "password": "159357",
+      "id": 7
+    },
+    {
+      "name": "chandan",
+      "email": "chandan@gmail.com",
+      "password": "159357",
+      "id": 8
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 9
+    },
+    {
+      "name": "Sajal Devnath",
+      "email": "sajaldevnath96@gmail.com",
+      "password": "abc2D",
+      "id": 10
+    },
+    {
+      "name": "Sajal Devnath",
+      "email": "sajaldevnath96@gmail.com",
+      "password": "abc2D",
+      "id": 11
+    },
+    {
+      "name": "Sajal Devnath",
+      "email": "sajaldevnath96@gmail.com",
+      "password": "abc2D",
+      "id": 12
+    },
+    {
+      "id": 13
+    }
+  ]
+}

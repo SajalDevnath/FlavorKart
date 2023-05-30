@@ -1,0 +1,5 @@
+How to push code in Github
+git status
+git add .
+git commit -m "Message"
+git push origin master

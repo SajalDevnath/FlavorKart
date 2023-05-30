@@ -49,12 +49,6 @@
       "id": 8
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 9
-    },
-    {
       "name": "Sajal Devnath",
       "email": "sajaldevnath96@gmail.com",
       "password": "abc2D",
@@ -74,6 +68,89 @@
     },
     {
       "id": 13
+    },
+    {
+      "name": "Kim Cross",
+      "email": "nysic@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 14
+    },
+    {
+      "name": "jatin",
+      "email": "jatin@gmail.com",
+      "password": "4563",
+      "id": 15
+    },
+    {
+      "name": "Manas Das",
+      "email": "manas@gmail.com",
+      "password": "789",
+      "id": 16
+    },
+    {
+      "name": "Slade Singleton",
+      "email": "najet@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 17
+    },
+    {
+      "name": "Hyatt Mitchell",
+      "email": "jybykatiz@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 18
+    },
+    {
+      "name": "Raja Morrison",
+      "email": "gema@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 19
+    }
+  ],
+  "products": [
+    {
+      "name": "Isabella Mcfarland",
+      "price": "5656",
+      "info": "Est sint fugiat si",
+      "category": "Et iste omnis in qui",
+      "description": "Voluptas est consequ",
+      "image": "https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg",
+      "id": 7
+    },
+    {
+      "name": "Brennan Holman",
+      "price": "848",
+      "info": "Id non eu dolorum vo",
+      "category": "Expedita non nostrum",
+      "description": "Dolor non minim ea t",
+      "image": "https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg",
+      "id": 8
+    },
+    {
+      "name": "Justine Suarez",
+      "price": "163",
+      "info": "Ducimus qui unde su",
+      "category": "Deserunt dignissimos",
+      "description": "Id fugiat numquam se",
+      "image": "https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg",
+      "id": 9
+    },
+    {
+      "name": "Grady Goff",
+      "price": "511",
+      "info": "Aut adipisci dolores",
+      "category": "Necessitatibus aut u",
+      "description": "Amet quia ad autem ",
+      "image": "Eius et cum ut autem",
+      "id": 10
+    },
+    {
+      "name": "Jocelyn Cox",
+      "price": "722",
+      "info": "Accusamus quae beata",
+      "category": "Iusto ut ea commodo ",
+      "description": "Quis expedita repreh",
+      "image": "Atque optio aliqua",
+      "id": 11
     }
   ]
 }

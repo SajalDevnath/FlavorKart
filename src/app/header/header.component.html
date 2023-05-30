@@ -1,20 +1,61 @@
-<nav class="nav">
+<!-- <nav class="nav">
   <h1>
-    <span style="color: #f8cb46">Flavor</span
-    ><span style="color: #54b226">Kart</span>
+    <a style="text-decoration: none" routerLink="/">
+      <span style="color: #f8cb46">Flavor</span
+      ><span style="color: #54b226">Kart</span>
+    </a>
   </h1>
-  <!-- <div>
-    <input type="text" placeholder="Search for Products" />
-    <button>Search</button>
-  </div> -->
-  <div class="search-container">
+  <div *ngIf="menuType === 'default'" class="search-container">
     <input type="text" placeholder="Search..." class="search-input" />
     <button type="submit" class="search-button">Search</button>
   </div>
-  <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/seller-auth">Seller</a></li>
-    <li><a routerLink="#">Login</a></li>
-    <li><a routerLink="#">Cart(0)</a></li>
-  </ul>
+  <div [ngSwitch]="menuType">
+    <ul *ngSwitchCase="'default'">
+      <li><a routerLink="" class="cart-link">Home</a></li>
+      <li><a routerLink="seller-auth" class="cart-link">Seller</a></li>
+      <li><a routerLink="#" class="cart-link">Login</a></li>
+      <li><a routerLink="#" class="cart-link">Cart(0)</a></li>
+    </ul>
+    <ul *ngSwitchCase="'seller'">
+      <li>
+        <a routerLink="#" class="cart-link">{{ sellerName | titlecase }}</a>
+      </li>
+      <li>
+        <a routerLink="seller-add-product" class="cart-link">Add Product</a>
+      </li>
+      <li><a routerLink="/seller-home" class="cart-link">Product List</a></li>
+      <li><a (click)="logout()" class="cart-link">Logout</a></li>
+    </ul>
+  </div>
+</nav> -->
+
+<nav class="custom-nav sticky-top">
+  <h1>
+    <a style="text-decoration: none" routerLink="/">
+      <span class="custom-nav-primary-color">Flavor</span
+      ><span class="custom-nav-secondary-color">Kart</span>
+    </a>
+  </h1>
+  <div *ngIf="menuType === 'default'" class="search-container">
+    <input type="text" placeholder="Search..." class="custom-nav-input" />
+    <button type="submit" class="custom-nav-button">Search</button>
+  </div>
+  <div [ngSwitch]="menuType">
+    <ul *ngSwitchCase="'default'" class="custom-nav-list">
+      <li><a routerLink="" class="custom-nav-link">Home</a></li>
+      <li><a routerLink="seller-auth" class="custom-nav-link">Seller</a></li>
+      <li><a routerLink="#" class="custom-nav-link">Login</a></li>
+      <li><a routerLink="#" class="custom-nav-link">Cart(0)</a></li>
+    </ul>
+    <ul *ngSwitchCase="'seller'" class="custom-nav-list">
+      <li>
+        <a routerLink="#" class="custom-nav-link">{{ sellerName | titlecase }}</a>
+      </li>
+      <li>
+        <a routerLink="seller-add-product" class="custom-nav-link">Add Product</a>
+      </li>
+      <li><a routerLink="/seller-home" class="custom-nav-link">Product List</a></li>
+      <li><a (click)="logout()" class="custom-nav-link">Logout</a></li>
+    </ul>
+  </div>
 </nav>

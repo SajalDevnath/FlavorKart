@@ -1,1 +1,19 @@
-<p>home works!</p>
+<div class="container-jumbotron">
+  <ngb-carousel *ngIf="popularProducts">
+    <ng-template *ngFor="let item of popularProducts" ngbSlide>
+      <div class="picsum-img-wrapper" style="width: 100%">
+        <img
+          class="product-header-img"
+          src="{{ item.image }}"
+          alt="Random first slide"
+        />
+      </div>
+      <div class="carousel-caption mx-auto" style="width: 20%">
+        <h3 class="carousel-caption-title">{{ item.name }}</h3>
+        <p class="carousel-caption-text">
+          {{ item.description }}
+        </p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

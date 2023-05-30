@@ -18,6 +18,7 @@ export class SellerService {
       })
       .subscribe((result) => {
         this.isSellerLoggedIn.next(true);
+        localStorage.removeItem('seller');
         localStorage.setItem('seller', JSON.stringify(result.body));
         this.router.navigate(['seller-home']);
       });

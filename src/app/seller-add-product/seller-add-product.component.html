@@ -1,0 +1,100 @@
+<!-- <div class="add-product">
+  <h1>Add New Product</h1>
+  <form #addProduct="ngForm">
+    <input
+      class="form-input"
+      type="text"
+      ngModel
+      name="name"
+      placeholder="Enter Product"
+    />
+    <input
+      class="form-input"
+      type="text"
+      ngModel
+      name="price"
+      placeholder="Enter Price"
+    />
+    <input
+      class="form-input"
+      type="text"
+      ngModel
+      name="color"
+      placeholder="Enter Product color"
+    />
+    <input
+      class="form-input"
+      type="text"
+      ngModel
+      name="category"
+      placeholder="Enter Category"
+    />
+    <textarea
+      class="form-input"
+      type="text"
+      ngModel
+      name="description"
+      placeholder="Enter Description"
+    ></textarea>
+    <input
+      class="form-input"
+      type="text"
+      ngModel
+      name="image"
+      placeholder="Enter Product Image URL"
+    />
+  </form>
+</div> -->
+
+<div class="add-product">
+  <h1>Add New Product</h1>
+  <p class="p_message">{{ addProductMessage }}</p>
+  <form
+    #addProduct="ngForm"
+    (ngSubmit)="submit(addProduct.value)"
+    class="common-form"
+  >
+    <input
+      class="form-input"
+      type="text"
+      ngModel
+      name="name"
+      placeholder="Product Name"
+    />
+    <input
+      class="form-input"
+      type="text"
+      ngModel
+      name="price"
+      placeholder="Product Price"
+    />
+    <input
+      class="form-input"
+      type="text"
+      ngModel
+      name="info"
+      placeholder="Nutritional Information"
+    />
+    <input
+      class="form-input"
+      type="text"
+      ngModel
+      name="category"
+      placeholder="Product Category"
+    />
+    <textarea
+      class="form-input"
+      ngModel
+      name="description"
+      placeholder="Product Description"
+    ></textarea>
+    <input
+      class="form-input"
+      type="text"
+      ngModel
+      name="image"
+      placeholder="Product Image URL"
+    />
+    <button class="form-button">Add Product</button>
+  </form>
+</div>

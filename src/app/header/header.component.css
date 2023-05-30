@@ -180,7 +180,7 @@
   justify-content: space-between;
   align-items: center;
   /* margin-top: 15px; */
-  padding: 10px;
+  padding: 15px;
   background-color: #f8f8f8; /* Replace with your desired background color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -276,3 +276,12 @@
 .background-color {
   color: #333;
 }
+
+/* .cart-color{
+  font-size: larger;
+} */
+.cart-color:hover{
+  color: #4caf50;
+  background-color: #fff;
+}
+

@@ -40,7 +40,7 @@ export class SellerHomeComponent implements OnInit {
   list() {
     this.product.productList().subscribe((result) => {
       console.warn(result);
-      this.productList = result;
+      this.productList = result.reverse();
     });
   }
 }

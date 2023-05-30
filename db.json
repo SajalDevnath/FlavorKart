@@ -108,7 +108,7 @@
   ],
   "products": [
     {
-      "name": "Isabella Mcfarland",
+      "name": "manas",
       "price": "5656",
       "info": "Est sint fugiat si",
       "category": "Et iste omnis in qui",
@@ -133,24 +133,6 @@
       "description": "Id fugiat numquam se",
       "image": "https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg",
       "id": 9
-    },
-    {
-      "name": "Grady Goff",
-      "price": "511",
-      "info": "Aut adipisci dolores",
-      "category": "Necessitatibus aut u",
-      "description": "Amet quia ad autem ",
-      "image": "Eius et cum ut autem",
-      "id": 10
-    },
-    {
-      "name": "Jocelyn Cox",
-      "price": "722",
-      "info": "Accusamus quae beata",
-      "category": "Iusto ut ea commodo ",
-      "description": "Quis expedita repreh",
-      "image": "Atque optio aliqua",
-      "id": 11
     }
   ]
 }

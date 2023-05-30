@@ -29,3 +29,199 @@
   font-size: 14px;
   margin: 5px 0;
 }
+
+/* .container-kitchen-basics {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 900px;
+}
+
+.container-kitchen-basics h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container-kitchen-basics .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-kitchen-basics .col-sm-3 {
+  width: 300px;
+  margin: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-kitchen-basics .product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-kitchen-basics .product-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.container-kitchen-basics .name-head {
+  color: #333;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.container-kitchen-basics .product-price {
+  color: #333;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.container-kitchen-basics .product-category {
+  color: #999;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.container-kitchen-basics .product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-kitchen-basics .product-footer a {
+  color: #54b226;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.container-kitchen-basics .product-footer a:hover {
+  color: #43991e;
+}
+
+.container-kitchen-basics .product-details {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container-kitchen-basics .product-price {
+  color: #333;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.container-kitchen-basics .product-category {
+  color: #999;
+  font-size: 14px;
+  margin: 5px 0;
+} */
+
+.container-kitchen-basics {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 900px;
+}
+
+.container-kitchen-basics h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container-kitchen-basics .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-kitchen-basics .col-sm-3 {
+  flex-basis: calc(25% - 30px);
+  margin: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-kitchen-basics .product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-kitchen-basics .product-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.container-kitchen-basics .name-head {
+  color: #333;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.container-kitchen-basics .product-price {
+  color: #333;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.container-kitchen-basics .product-category {
+  color: #999;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.container-kitchen-basics .product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-kitchen-basics .product-footer a {
+  color: #54b226;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.container-kitchen-basics .product-footer a:hover {
+  color: #43991e;
+}
+
+.container-kitchen-basics .product-details {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container-kitchen-basics .product-price {
+  color: #333;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.container-kitchen-basics .product-category {
+  color: #999;
+  font-size: 14px;
+  margin: 5px 0;
+}

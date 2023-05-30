@@ -45,16 +45,26 @@
       <li><a routerLink="" class="custom-nav-link">Home</a></li>
       <li><a routerLink="seller-auth" class="custom-nav-link">Seller</a></li>
       <li><a routerLink="#" class="custom-nav-link">Login</a></li>
-      <li><a routerLink="#" class="custom-nav-link">Cart</a></li>
+      <li>
+        <a routerLink="#" class="custom-nav-link custom-nav-button cart-color"
+          ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart</a
+        >
+      </li>
     </ul>
     <ul *ngSwitchCase="'seller'" class="custom-nav-list">
       <li>
-        <a routerLink="#" class="custom-nav-link">{{ sellerName | titlecase }}</a>
+        <a routerLink="#" class="custom-nav-link">{{
+          sellerName | titlecase
+        }}</a>
       </li>
       <li>
-        <a routerLink="seller-add-product" class="custom-nav-link">Add Product</a>
+        <a routerLink="seller-add-product" class="custom-nav-link"
+          >Add Product</a
+        >
       </li>
-      <li><a routerLink="/seller-home" class="custom-nav-link">Product List</a></li>
+      <li>
+        <a routerLink="/seller-home" class="custom-nav-link">Product List</a>
+      </li>
       <li><a (click)="logout()" class="custom-nav-link">Logout</a></li>
     </ul>
   </div>

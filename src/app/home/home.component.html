@@ -1,12 +1,14 @@
 <div class="container-jumbotron">
   <ngb-carousel *ngIf="popularProducts">
     <ng-template *ngFor="let item of popularProducts" ngbSlide>
-      <div class="picsum-img-wrapper" style="width: 100%">
-        <img
-          class="product-header-img"
-          src="{{ item.image }}"
-          alt="Random first slide"
-        />
+      <div class="picsum-img-wrapper">
+        <a routerLink="/details/{{ item.id }}">
+          <img
+            class="product-header-img"
+            src="{{ item.image }}"
+            alt="Random first slide"
+          />
+        </a>
       </div>
       <div class="carousel-caption mx-auto" style="width: 20%">
         <h3 class="carousel-caption-title">{{ item.name }}</h3>
@@ -45,7 +47,25 @@
   <div class="container-kitchen-basics">
     <h1>Kitchen Basics</h1>
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-3" *ngFor="let item of kitchenBasics">
+        <div class="product-item">
+          <img src="{{ item.image }}" alt="" />
+        </div>
+        <div class="product-details">
+          <h6 class="name-head">{{ item.name }}</h6>
+          <div class="product-price">
+            <h6>Price: {{ item.price }}</h6>
+          </div>
+          <div class="product-category">
+            <h6>{{ item.category }}</h6>
+          </div>
+        </div>
+        <div class="product-footer">
+          <a routerLink="/details/{{ item.id }}">View Details</a>
+          <a routerLink="/details/{{ item.id }}">Add To Cart</a>
+        </div>
+      </div>
+      <!-- <div class="col-sm-3">
         <div class="product-item">
           <img
             src="https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg"
@@ -65,8 +85,8 @@
           <a href="">View Details</a>
           <a href="">Add To Cart</a>
         </div>
-      </div>
-      <div class="col-sm-3">
+      </div> -->
+      <!-- <div class="col-sm-3">
         <div class="product-item">
           <img
             src="https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg"
@@ -86,8 +106,8 @@
           <a href="">View Details</a>
           <a href="">Add To Cart</a>
         </div>
-      </div>
-      <div class="col-sm-3">
+      </div> -->
+      <!-- <div class="col-sm-3">
         <div class="product-item">
           <img
             src="https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg"
@@ -107,29 +127,7 @@
           <a href="">View Details</a>
           <a href="">Add To Cart</a>
         </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="product-item">
-          <img
-            src="https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg"
-            alt=""
-          />
-        </div>
-        <div class="product-details">
-          <h6 class="name-head">Curd</h6>
-          <div class="product-price">
-            <h6>Price: 150/-</h6>
-          </div>
-          <div class="product-category">
-            <h6>Lorem ipsum dolor sit amet</h6>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="">View Details</a>
-          <a href="">Add To Cart</a>
-        </div>
-      </div>
+      </div> -->
     </div>
   </div>
-  
 </div>

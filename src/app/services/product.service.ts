@@ -21,10 +21,23 @@ export class ProductService {
     return this.http.get<product>(`http://localhost:3000/products/${id}`);
   }
   updateProduct(product: product) {
-    console.warn(product)
-    return this.http.put<product>(`http://localhost:3000/products/${product.id}`, product);
+    console.warn(product);
+    return this.http.put<product>(
+      `http://localhost:3000/products/${product.id}`,
+      product
+    );
   }
-  popularProducts(){
+  popularProducts() {
     return this.http.get<product[]>('http://localhost:3000/products?_limit=3');
+  }
+
+  kitchenBasics() {
+    return this.http.get<product[]>('http://localhost:3000/products?_limit=8');
+  }
+
+  searchProducts(query: string) {
+    return this.http.get<product[]>(
+      `http://localhost:3000/products?q=${query}`
+    );
   }
 }

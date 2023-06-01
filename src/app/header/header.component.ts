@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { ProductService } from '../services/product.service';
+import { product } from '../data-type';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +13,8 @@ export class HeaderComponent implements OnInit {
   menuType: string = 'default';
   sellerName: string = '';
   cart = faCartShopping;
-  constructor(private route: Router) {}
+  searchResult: undefined | product[];
+  constructor(private route: Router, private product: ProductService) {}
 
   ngOnInit(): void {
     this.route.events.subscribe((val: any) => {
@@ -28,7 +31,7 @@ export class HeaderComponent implements OnInit {
             this.sellerName = sellerData.name;
           }
         } else {
-          console.warn('outside seller');
+          // console.warn('outside seller');
           this.menuType = 'default';
         }
       }
@@ -38,5 +41,26 @@ export class HeaderComponent implements OnInit {
   logout() {
     localStorage.removeItem('seller');
     this.route.navigate(['/']);
+  }
+
+  searchProducts(query: KeyboardEvent) {
+    if (query) {
+      const element = query.target as HTMLInputElement;
+      this.product.searchProducts(element.value).subscribe((result) => {
+        console.warn(result);
+        if (result.length > 5) result.length = 5;
+        this.searchResult = result;
+      });
+    }
+  }
+  hideSearch() {
+    this.searchResult = undefined;
+  }
+  redirectToDetails(id: number) {
+    this.route.navigate(['/details/' + id]);
+  }
+  submitSearch(val: string) {
+    console.warn(val);
+    this.route.navigate([`search/${val}`]);
   }
 }

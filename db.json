@@ -108,31 +108,103 @@
   ],
   "products": [
     {
-      "name": "manas",
-      "price": "5656",
-      "info": "Est sint fugiat si",
-      "category": "Et iste omnis in qui",
-      "description": "Voluptas est consequ",
-      "image": "https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg",
+      "name": "Rice",
+      "price": "₹400",
+      "info": "Calories: 150 per serving, Carbohydrates: 35g, Protein: 3g, Fat: 0g",
+      "category": "Grains",
+      "description": "Rice is a staple grain commonly used in many cuisines worldwide. It is versatile and can be enjoyed as a main dish or a side.",
+      "image": "https://th.bing.com/th/id/OIP.k25apSjbIPhKeDuq0tR_ZQHaE8?pid=ImgDet&rs=1",
+      "id": 1
+    },
+    {
+      "name": "Pasta",
+      "price": "₹240",
+      "info": "Calories: 200 per serving, Carbohydrates: 40g, Protein: 8g, Fat: 1g",
+      "category": "Grains",
+      "description": "Pasta is a popular Italian staple made from durum wheat. It comes in various shapes and can be paired with different sauces and toppings.",
+      "image": "https://th.bing.com/th/id/OIP.uk0J_gZZ25qDdU1S2GSWEwHaE7?pid=ImgDet&w=197&h=130&c=7&dpr=1.8",
+      "id": 2
+    },
+    {
+      "name": "Olive Oil",
+      "price": "₹640",
+      "info": "Calories: 120 per tablespoon, Fat: 14g, Vitamin E: 10% DV",
+      "category": "Oils & Condiments",
+      "description": "Olive oil is a healthy cooking oil derived from olives. It is rich in monounsaturated fats and adds a distinct flavor to dishes.",
+      "image": "https://th.bing.com/th/id/OIP.kJhTKt9n48mMmSw0Fg5mxAHaFj?w=265&h=197&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "id": 3
+    },
+    {
+      "name": "Salt",
+      "price": "₹160",
+      "info": "Sodium: 590mg per teaspoon",
+      "category": "Spices & Seasonings",
+      "description": "Salt is a basic seasoning used to enhance the flavor of various dishes. It is an essential ingredient in cooking and baking.",
+      "image": "https://th.bing.com/th/id/OIP.El6sDCkfW5Yi7XlVQ9UhRQHaE8?pid=ImgDet&rs=1",
+      "id": 4
+    },
+    {
+      "name": "Pepper",
+      "price": "₹240",
+      "info": "Calories: 5 per teaspoon",
+      "category": "Spices & Seasonings",
+      "description": "Pepper is a versatile spice that adds a mild to hot and pungent flavor to dishes. It is commonly used in both savory and sweet recipes.",
+      "image": "https://th.bing.com/th/id/R.e7d4b1ea577281386ff80869e26a0b9a?rik=MePv5beAyHdlyw&riu=http%3a%2f%2fmedia.al.com%2fliving_impact%2fphoto%2fchinense-pepper-2-smalljpg-937ee6c8a3b4685d.jpg&ehk=vVx5jmUgHnYY7oYTdR18CVXHmj7zt6bVQl8X7ymefoU%3d&risl=&pid=ImgRaw&r=0",
+      "id": 5
+    },
+    {
+      "name": "Garlic",
+      "price": "₹80",
+      "info": "Calories: 5 per clove, Carbohydrates: 1g, Vitamin C: 2% DV",
+      "category": "Fresh Produce",
+      "description": "Garlic is a strongly aromatic herb used in cooking for its unique flavor. It adds depth and complexity to various dishes.",
+      "image": "https://th.bing.com/th/id/OIP.insySAmVfseCeimFiMIKpAHaE8?w=255&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "id": 6
+    },
+    {
+      "name": "Onion",
+      "price": "₹80",
+      "info": "40 per medium onion, Carbohydrates: 9g, Fiber: 2g",
+      "category": "Fresh Produce",
+      "description": "Onions are widely used in cooking as a flavor base. They add a sweet and savory taste to dishes and can be enjoyed raw or cooked.",
+      "image": "https://th.bing.com/th/id/OIP.29RycFdMdxYD1kpXSd9ccAHaFj?w=248&h=186&c=7&r=0&o=5&dpr=1.8&pid=1.7",
       "id": 7
     },
     {
-      "name": "Brennan Holman",
-      "price": "848",
-      "info": "Id non eu dolorum vo",
-      "category": "Expedita non nostrum",
-      "description": "Dolor non minim ea t",
-      "image": "https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg",
+      "name": "Tomatoes",
+      "price": "₹320",
+      "info": "25 per medium tomato, Carbohydrates: 6g, Vitamin C: 20% DV",
+      "category": "Fresh Produce",
+      "description": "Tomatoes are a versatile fruit used in various culinary preparations. They can be enjoyed fresh, cooked, or used as a base for sauces and soups.",
+      "image": "https://th.bing.com/th/id/OIP.J5ZfAqW_RutWoqWtwfFpOwHaE7?w=258&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
       "id": 8
     },
     {
-      "name": "Justine Suarez",
-      "price": "163",
-      "info": "Ducimus qui unde su",
-      "category": "Deserunt dignissimos",
-      "description": "Id fugiat numquam se",
-      "image": "https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg",
+      "name": "Eggs",
+      "price": "₹240",
+      "info": "Calories: 70 per large egg, Protein: 6g, Fat: 5g",
+      "category": "Dairy & Eggs",
+      "description": "Eggs are a common ingredient in cooking and baking. They are rich in protein and can be prepared in numerous ways, such as frying, boiling, or baking.",
+      "image": "https://th.bing.com/th/id/OIP.-S1rjGMv_5DBVtSUtI1tvwHaE9?w=276&h=185&c=7&r=0&o=5&dpr=1.8&pid=1.7",
       "id": 9
+    },
+    {
+      "name": "Milk",
+      "price": "₹160",
+      "info": "Calories: 120 per cup, Protein: 8g, Calcium: 30% DV",
+      "category": "Dairy & Eggs",
+      "description": "Milk is a nutritious dairy product consumed worldwide. It is a rich source of calcium and can be enjoyed on its own or used in cooking and baking.",
+      "image": "https://th.bing.com/th/id/OIP.msS3NLwPxuAkVXWi2h0L_gHaHa?w=191&h=191&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "id": 10
+    },
+    {
+      "name": "Pepper",
+      "price": "₹390",
+      "info": "Calories: 5 per teaspoon",
+      "category": "Spices & Seasonings",
+      "description": "Pepper is a versatile spice that adds a mild to hot and pungent flavor to dishes. It is commonly used in both savory and sweet recipes.",
+      "image": "https://th.bing.com/th/id/R.e7d4b1ea577281386ff80869e26a0b9a?rik=MePv5beAyHdlyw&riu=http%3a%2f%2fmedia.al.com%2fliving_impact%2fphoto%2fchinense-pepper-2-smalljpg-937ee6c8a3b4685d.jpg&ehk=vVx5jmUgHnYY7oYTdR18CVXHmj7zt6bVQl8X7ymefoU%3d&risl=&pid=ImgRaw&r=0",
+      "id": 11
     }
   ]
 }

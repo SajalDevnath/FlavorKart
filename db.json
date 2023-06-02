@@ -104,6 +104,12 @@
       "email": "gema@mailinator.com",
       "password": "Pa$$w0rd!",
       "id": 19
+    },
+    {
+      "name": "david",
+      "email": "david@gmail.com",
+      "password": "123",
+      "id": 20
     }
   ],
   "products": [
@@ -205,6 +211,44 @@
       "description": "Pepper is a versatile spice that adds a mild to hot and pungent flavor to dishes. It is commonly used in both savory and sweet recipes.",
       "image": "https://th.bing.com/th/id/R.e7d4b1ea577281386ff80869e26a0b9a?rik=MePv5beAyHdlyw&riu=http%3a%2f%2fmedia.al.com%2fliving_impact%2fphoto%2fchinense-pepper-2-smalljpg-937ee6c8a3b4685d.jpg&ehk=vVx5jmUgHnYY7oYTdR18CVXHmj7zt6bVQl8X7ymefoU%3d&risl=&pid=ImgRaw&r=0",
       "id": 11
+    }
+  ],
+  "users": [
+    {
+      "name": "anil",
+      "email": "anil@gmail.com",
+      "password": "741",
+      "id": 1
+    },
+    {
+      "name": "peter",
+      "email": "peter@gmail.com",
+      "password": "852",
+      "id": 2
+    },
+    {
+      "name": "bella",
+      "email": "bella@gmail.com",
+      "password": "abc",
+      "id": 3
+    },
+    {
+      "name": "aakash",
+      "email": "aakash@gmail.com",
+      "password": "qwe",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 6
     }
   ]
 }

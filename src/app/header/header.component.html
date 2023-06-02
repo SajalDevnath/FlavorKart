@@ -38,12 +38,20 @@
   </h1>
   <div *ngIf="menuType === 'default'" class="search-container">
     <input
-      type="text" #searchInput
-      (keyup)="searchProducts($event)" (blur)="hideSearch()"
+      type="text"
+      #searchInput
+      (keyup)="searchProducts($event)"
+      (blur)="hideSearch()"
       placeholder="Search..."
       class="custom-nav-input"
     />
-    <button (click)="submitSearch(searchInput.value)" type="submit" class="custom-nav-button">Search</button>
+    <button
+      (click)="submitSearch(searchInput.value)"
+      type="submit"
+      class="custom-nav-button"
+    >
+      Search
+    </button>
     <ul class="suggested-result" *ngIf="searchResult">
       <li *ngFor="let item of searchResult">
         <a (mousedown)="redirectToDetails(item.id)">{{ item.name }}</a>
@@ -54,7 +62,22 @@
     <ul *ngSwitchCase="'default'" class="custom-nav-list">
       <li><a routerLink="" class="custom-nav-link">Home</a></li>
       <li><a routerLink="seller-auth" class="custom-nav-link">Seller</a></li>
-      <li><a routerLink="user-auth" class="custom-nav-link">Login/Sign Up</a></li>
+      <li>
+        <a routerLink="user-auth" class="custom-nav-link">Login/Sign Up</a>
+      </li>
+      <li>
+        <a routerLink="#" class="custom-nav-link custom-nav-button cart-color"
+          ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart</a
+        >
+      </li>
+    </ul>
+    <ul *ngSwitchCase="'user'" class="custom-nav-list">
+      <li>
+        <a routerLink="user-auth" class="custom-nav-link">{{ userName | titlecase}}</a>
+      </li>
+      <li><a routerLink="" class="custom-nav-link">Home</a></li>
+      <li><a routerLink="seller-auth" class="custom-nav-link">Seller</a></li>
+      <li><a (click)="userLogout()" routerLink="user-auth" class="custom-nav-link">Logout</a></li>
       <li>
         <a routerLink="#" class="custom-nav-link custom-nav-button cart-color"
           ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart</a

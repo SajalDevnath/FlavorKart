@@ -18,16 +18,37 @@
   </div>
   <div *ngIf="showLogin" class="user-login">
     <h1>User Login</h1>
+    <p class="invalid-credentials">{{ authError }}</p>
     <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)">
       <!-- <input type="text" placeholder="User Name" name="name" ngModel /> -->
-      <input type="text" placeholder="User Email" name="email" ngModel />
+      <input
+        type="text"
+        placeholder="User Email"
+        name="email"
+        ngModel
+        #email="ngModel"
+        required
+        email
+      />
+      <p class="invalid-message" *ngIf="email.invalid && email.touched">
+        Invalid input. Please try again.
+      </p>
+
       <input
         type="password"
         placeholder="User Password"
         name="password"
         ngModel
+        minlength="3"
+        maxlength="8"
+        #password="ngModel"
+        required
       />
-      <button>Login</button>
+      <p class="invalid-message" *ngIf="password.invalid && password.touched">
+        Invalid input. Please try again.
+      </p>
+
+      <button [disabled]="userLogin.invalid">Login</button>
       <a class="auth-toggle-link" (click)="openSignUp()"
         >No account? Sign up here!</a
       >

@@ -110,6 +110,18 @@
       "email": "david@gmail.com",
       "password": "123",
       "id": 20
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 21
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 22
     }
   ],
   "products": [
@@ -249,6 +261,30 @@
       "email": "",
       "password": "",
       "id": 6
+    },
+    {
+      "name": "nat",
+      "email": "nat@gmail.com",
+      "password": "123456789",
+      "id": 7
+    },
+    {
+      "name": "Sajal Devnath",
+      "email": "sajaldevnath96@gmail.com",
+      "password": "4859",
+      "id": 8
+    },
+    {
+      "name": "Sajal Devnath",
+      "email": "sajaldevnath96@gmail.com",
+      "password": "sajal",
+      "id": 9
+    },
+    {
+      "name": "natasha",
+      "email": "natasha@gmail.com",
+      "password": "natasha",
+      "id": 10
     }
   ]
 }

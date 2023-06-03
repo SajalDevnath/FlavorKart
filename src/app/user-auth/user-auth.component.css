@@ -62,3 +62,23 @@
 .user-auth .auth-toggle-link:hover {
   color: #4b9f20;
 }
+
+.invalid-message {
+  color: #ff6347;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.user-auth form button:disabled {
+  cursor: not-allowed;
+}
+
+.user-login p.invalid-credentials {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: center;
+}

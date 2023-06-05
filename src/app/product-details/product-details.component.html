@@ -9,7 +9,8 @@
       <h5>Category: {{ productData.category }}</h5>
       <h5>Nutritional Information: {{ productData.info }}</h5>
       <h5>Description: {{ productData.description }}</h5>
-      <button (click)="AddToCart()">Add to Cart</button>
+      <button *ngIf="!removeCart" (click)="AddToCart()">Add to Cart</button>
+      <button  *ngIf="removeCart" (click)="RemovefromCart(productData.id)">Remove from Cart</button>
       <button>Buy Now</button>
       <div class="quantity-group">
         <button (click)="handleQuantity('min')">-</button>

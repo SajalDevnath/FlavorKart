@@ -67,20 +67,30 @@
       </li>
       <li>
         <a routerLink="#" class="custom-nav-link custom-nav-button cart-color"
-          ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart</a
+          ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart {{
+            cartItems
+          }}</a
         >
       </li>
     </ul>
     <ul *ngSwitchCase="'user'" class="custom-nav-list">
       <li>
-        <a routerLink="user-auth" class="custom-nav-link">{{ userName | titlecase}}</a>
+        <a routerLink="user-auth" class="custom-nav-link">{{
+          userName | titlecase
+        }}</a>
       </li>
       <li><a routerLink="" class="custom-nav-link">Home</a></li>
       <li><a routerLink="seller-auth" class="custom-nav-link">Seller</a></li>
-      <li><a (click)="userLogout()" routerLink="user-auth" class="custom-nav-link">Logout</a></li>
+      <li>
+        <a (click)="userLogout()" routerLink="user-auth" class="custom-nav-link"
+          >Logout</a
+        >
+      </li>
       <li>
         <a routerLink="#" class="custom-nav-link custom-nav-button cart-color"
-          ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart</a
+          ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart {{
+            cartItems
+          }}</a
         >
       </li>
     </ul>

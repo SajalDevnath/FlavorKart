@@ -285,6 +285,56 @@
       "email": "natasha@gmail.com",
       "password": "natasha",
       "id": 10
+    },
+    {
+      "name": "Manas",
+      "email": "dasmanas@gmail.com",
+      "password": "manas",
+      "id": 11
+    },
+    {
+      "name": "Ruchi",
+      "email": "ruchiraj@gmail.com",
+      "password": "789456123",
+      "id": 12
+    }
+  ],
+  "cart": [
+    {
+      "name": "Rice",
+      "price": "₹400",
+      "info": "Calories: 150 per serving, Carbohydrates: 35g, Protein: 3g, Fat: 0g",
+      "category": "Grains",
+      "description": "Rice is a staple grain commonly used in many cuisines worldwide. It is versatile and can be enjoyed as a main dish or a side.",
+      "image": "https://th.bing.com/th/id/OIP.k25apSjbIPhKeDuq0tR_ZQHaE8?pid=ImgDet&rs=1",
+      "quantity": 1,
+      "userId": 10,
+      "productId": 1,
+      "id": 1
+    },
+    {
+      "name": "Tomatoes",
+      "price": "₹320",
+      "info": "25 per medium tomato, Carbohydrates: 6g, Vitamin C: 20% DV",
+      "category": "Fresh Produce",
+      "description": "Tomatoes are a versatile fruit used in various culinary preparations. They can be enjoyed fresh, cooked, or used as a base for sauces and soups.",
+      "image": "https://th.bing.com/th/id/OIP.J5ZfAqW_RutWoqWtwfFpOwHaE7?w=258&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "quantity": 1,
+      "productId": 8,
+      "userId": 12,
+      "id": 2
+    },
+    {
+      "name": "Onion",
+      "price": "₹80",
+      "info": "40 per medium onion, Carbohydrates: 9g, Fiber: 2g",
+      "category": "Fresh Produce",
+      "description": "Onions are widely used in cooking as a flavor base. They add a sweet and savory taste to dishes and can be enjoyed raw or cooked.",
+      "image": "https://th.bing.com/th/id/OIP.29RycFdMdxYD1kpXSd9ccAHaFj?w=248&h=186&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "quantity": 1,
+      "productId": 7,
+      "userId": 12,
+      "id": 3
     }
   ]
 }

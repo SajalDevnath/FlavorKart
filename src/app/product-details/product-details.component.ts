@@ -12,6 +12,7 @@ export class ProductDetailsComponent implements OnInit {
   productData: undefined | product;
   productQuantity: number = 1;
   removeCart = false;
+  cartData: product | undefined;
   constructor(
     private activeRoute: ActivatedRoute,
     private product: ProductService
@@ -36,6 +37,21 @@ export class ProductDetailsComponent implements OnInit {
           } else {
             this.removeCart = false;
           }
+        }
+        let user = localStorage.getItem('user');
+        if (user) {
+          let userId = user && JSON.parse(user).id;
+          this.product.getCartList(userId);
+          this.product.cartData.subscribe((result) => {
+            let items = result.filter(
+              (item: product) =>
+                productId?.toString() === item.productId?.toString()
+            );
+            if (items.length) {
+              this.cartData = items[0];
+              this.removeCart = true;
+            }
+          });
         }
       });
   }
@@ -65,18 +81,30 @@ export class ProductDetailsComponent implements OnInit {
         };
         delete cartData.id;
         // console.warn(cartData);
-        this.product.AddToCart(cartData).subscribe((result) =>{
-          if(result){
-            alert('product is added in cart')
+        this.product.AddToCart(cartData).subscribe((result) => {
+          if (result) {
+            this.product.getCartList(userId);
+            this.removeCart = true;
           }
-        })
-
+        });
       }
     }
   }
 
   RemovefromCart(productId: number) {
-    this.product.RemoveitemfromCart(productId);
-    this.removeCart = false;
+    if (!localStorage.getItem('user')) {
+      this.product.RemoveitemfromCart(productId);
+    } else {
+      let user = localStorage.getItem('user');
+      let userId = user && JSON.parse(user).id;
+      console.warn(this.cartData);
+      this.cartData &&
+        this.product.removeToCart(this.cartData.id).subscribe((result) => {
+          if (result) {
+            this.product.getCartList(userId);
+          }
+        });
+      this.removeCart = false;
+    }
   }
 }

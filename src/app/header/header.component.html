@@ -67,9 +67,8 @@
       </li>
       <li>
         <a routerLink="#" class="custom-nav-link custom-nav-button cart-color"
-          ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart {{
-            cartItems
-          }}</a
+          ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart
+          {{ cartItems }}</a
         >
       </li>
     </ul>
@@ -87,10 +86,11 @@
         >
       </li>
       <li>
-        <a routerLink="#" class="custom-nav-link custom-nav-button cart-color"
-          ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart {{
-            cartItems
-          }}</a
+        <a
+          routerLink="cart-page"
+          class="custom-nav-link custom-nav-button cart-color"
+          ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart
+          {{ cartItems }}</a
         >
       </li>
     </ul>

@@ -1,0 +1,149 @@
+.cart-page {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.cart-page h1 {
+  text-align: center;
+  color: #4caf50;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.details img {
+  height: 100px;
+  border-radius: 5px;
+}
+
+.details ul {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.details ul:last-child {
+  /* margin-bottom: 0; */
+  border-bottom: none;
+}
+
+.details li {
+  text-align: center;
+}
+
+.details .product-name {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.details .price {
+  font-size: 16px;
+  color: #666;
+}
+
+.details .info-heading {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.details .info-content {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.details .quantity {
+  font-size: 16px;
+  color: #333;
+}
+
+.details .form-button {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.details .form-button:hover {
+  background-color: #45a049;
+}
+
+.summary {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  height: 50%;
+  border: 1px solid #ddd;
+}
+
+.summary h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.summary ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.summary li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.summary span {
+  font-size: 16px;
+  color: #333;
+}
+
+.summary h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.summary .total {
+  margin-top: 10px;
+}
+
+.summary .checkout-button {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.summary .checkout-button:hover {
+  background-color: #45a049;
+}
+

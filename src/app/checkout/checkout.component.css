@@ -1,0 +1,114 @@
+.checkout-page {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.checkout-page h1 {
+  text-align: center;
+  color: #4caf50;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.common-form .form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Poppins;
+}
+
+.btn-container {
+  margin-top: 10px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Poppins;
+}
+
+.form-button:hover {
+  background-color: #45a049;
+}
+
+.form-link {
+  color: #4caf50;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.form-link:hover {
+  color: #45a049;
+}
+
+.payment-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.payment-details div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.payment-details h3,
+.payment-details h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.payment-details span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.payment-method {
+  color: #4caf50;
+}

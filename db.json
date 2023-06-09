@@ -299,54 +299,23 @@
       "id": 12
     }
   ],
-  "cart": [
+  "cart": [],
+  "orders": [
     {
-      "name": "Rice",
-      "price": "₹400",
-      "info": "Calories: 150 per serving, Carbohydrates: 35g, Protein: 3g, Fat: 0g",
-      "category": "Grains",
-      "description": "Rice is a staple grain commonly used in many cuisines worldwide. It is versatile and can be enjoyed as a main dish or a side.",
-      "image": "https://th.bing.com/th/id/OIP.k25apSjbIPhKeDuq0tR_ZQHaE8?pid=ImgDet&rs=1",
-      "quantity": 1,
-      "userId": 10,
-      "productId": 1,
+      "email": "ruchiraj@gmail.com",
+      "address": "Top Floor, Arora Apartment, Law Gate Road, Green Valley, Kapurthala District",
+      "contact": "6945",
+      "totalPrice": 1380,
+      "userId": 12,
       "id": 1
     },
     {
-      "name": "Rice",
-      "price": "400",
-      "info": "Calories: 150 per serving, Carbohydrates: 35g, Protein: 3g, Fat: 0g",
-      "category": "Grains",
-      "description": "Rice is a staple grain commonly used in many cuisines worldwide. It is versatile and can be enjoyed as a main dish or a side.",
-      "image": "https://th.bing.com/th/id/OIP.k25apSjbIPhKeDuq0tR_ZQHaE8?pid=ImgDet&rs=1",
-      "quantity": 5,
+      "email": "ruchiraj@gmail.com",
+      "address": "Top Floor, Arora Apartment, Law Gate Road, Green Valley, Kapurthala District",
+      "contact": "6945",
+      "totalPrice": 1380,
       "userId": 12,
-      "productId": 1,
       "id": 2
-    },
-    {
-      "name": "Pasta",
-      "price": "240",
-      "info": "Calories: 200 per serving, Carbohydrates: 40g, Protein: 8g, Fat: 1g",
-      "category": "Grains",
-      "description": "Pasta is a popular Italian staple made from durum wheat. It comes in various shapes and can be paired with different sauces and toppings.",
-      "image": "https://th.bing.com/th/id/OIP.uk0J_gZZ25qDdU1S2GSWEwHaE7?pid=ImgDet&w=197&h=130&c=7&dpr=1.8",
-      "quantity": 1,
-      "userId": 12,
-      "productId": 2,
-      "id": 3
-    },
-    {
-      "name": "Olive Oil",
-      "price": "640",
-      "info": "Calories: 120 per tablespoon, Fat: 14g, Vitamin E: 10% DV",
-      "category": "Oils & Condiments",
-      "description": "Olive oil is a healthy cooking oil derived from olives. It is rich in monounsaturated fats and adds a distinct flavor to dishes.",
-      "image": "https://th.bing.com/th/id/OIP.kJhTKt9n48mMmSw0Fg5mxAHaFj?w=265&h=197&c=7&r=0&o=5&dpr=1.8&pid=1.7",
-      "quantity": 5,
-      "userId": 12,
-      "productId": 3,
-      "id": 4
     }
   ]
 }

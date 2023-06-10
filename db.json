@@ -308,14 +308,6 @@
       "totalPrice": 1380,
       "userId": 12,
       "id": 1
-    },
-    {
-      "email": "ruchiraj@gmail.com",
-      "address": "Top Floor, Arora Apartment, Law Gate Road, Green Valley, Kapurthala District",
-      "contact": "6945",
-      "totalPrice": 1380,
-      "userId": 12,
-      "id": 2
     }
   ]
 }

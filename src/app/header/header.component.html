@@ -1,34 +1,3 @@
-<!-- <nav class="nav">
-  <h1>
-    <a style="text-decoration: none" routerLink="/">
-      <span style="color: #f8cb46">Flavor</span
-      ><span style="color: #54b226">Kart</span>
-    </a>
-  </h1>
-  <div *ngIf="menuType === 'default'" class="search-container">
-    <input type="text" placeholder="Search..." class="search-input" />
-    <button type="submit" class="search-button">Search</button>
-  </div>
-  <div [ngSwitch]="menuType">
-    <ul *ngSwitchCase="'default'">
-      <li><a routerLink="" class="cart-link">Home</a></li>
-      <li><a routerLink="seller-auth" class="cart-link">Seller</a></li>
-      <li><a routerLink="#" class="cart-link">Login</a></li>
-      <li><a routerLink="#" class="cart-link">Cart(0)</a></li>
-    </ul>
-    <ul *ngSwitchCase="'seller'">
-      <li>
-        <a routerLink="#" class="cart-link">{{ sellerName | titlecase }}</a>
-      </li>
-      <li>
-        <a routerLink="seller-add-product" class="cart-link">Add Product</a>
-      </li>
-      <li><a routerLink="/seller-home" class="cart-link">Product List</a></li>
-      <li><a (click)="logout()" class="cart-link">Logout</a></li>
-    </ul>
-  </div>
-</nav> -->
-
 <nav class="custom-nav sticky-top">
   <h1>
     <a style="text-decoration: none" routerLink="/">
@@ -36,7 +5,7 @@
       ><span class="custom-nav-secondary-color">Kart</span>
     </a>
   </h1>
-  <div *ngIf="menuType === 'default'" class="search-container">
+  <div *ngIf="menuType !== 'seller'" class="search-container">
     <input
       type="text"
       #searchInput
@@ -79,6 +48,7 @@
         }}</a>
       </li>
       <li><a routerLink="" class="custom-nav-link">Home</a></li>
+      <li><a routerLink="my-orders" class="custom-nav-link">My Orders</a></li>
       <li><a routerLink="seller-auth" class="custom-nav-link">Seller</a></li>
       <li>
         <a (click)="userLogout()" routerLink="user-auth" class="custom-nav-link"
@@ -87,7 +57,7 @@
       </li>
       <li>
         <a
-          routerLink="cart-page"
+          [routerLink]="cartItems > 0 ? 'cart-page' : null"
           class="custom-nav-link custom-nav-button cart-color"
           ><fa-icon class="update-icon" [icon]="cart"></fa-icon> &nbsp; Cart
           {{ cartItems }}</a

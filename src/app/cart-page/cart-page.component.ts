@@ -36,7 +36,7 @@ export class CartPageComponent implements OnInit {
       let price = 0;
       result.forEach((item) => {
         if (item.quantity) {
-          price = price + +item.price * ++item.quantity;
+          price = price + +item.price * +item.quantity;
         }
       });
       this.priceSummary.price = price;

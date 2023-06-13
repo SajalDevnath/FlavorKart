@@ -1,18 +1,6 @@
 {
   "seller": [
     {
-      "name": "Sajal Devnath",
-      "email": "sajaldevnath96@gmail.com",
-      "password": "abc2D",
-      "id": 1
-    },
-    {
-      "name": "Sajal Devnath",
-      "email": "sajaldevnath96@gmail.com",
-      "password": "789456123",
-      "id": 2
-    },
-    {
       "name": "tony",
       "email": "tony@gmail.com",
       "password": "456",
@@ -37,55 +25,10 @@
       "id": 6
     },
     {
-      "name": "chandan",
-      "email": "chandan@gmail.com",
-      "password": "159357",
-      "id": 7
-    },
-    {
-      "name": "chandan",
-      "email": "chandan@gmail.com",
-      "password": "159357",
-      "id": 8
-    },
-    {
-      "name": "Sajal Devnath",
-      "email": "sajaldevnath96@gmail.com",
-      "password": "abc2D",
-      "id": 10
-    },
-    {
-      "name": "Sajal Devnath",
-      "email": "sajaldevnath96@gmail.com",
-      "password": "abc2D",
-      "id": 11
-    },
-    {
-      "name": "Sajal Devnath",
-      "email": "sajaldevnath96@gmail.com",
-      "password": "abc2D",
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
       "name": "Kim Cross",
       "email": "nysic@mailinator.com",
       "password": "Pa$$w0rd!",
       "id": 14
-    },
-    {
-      "name": "jatin",
-      "email": "jatin@gmail.com",
-      "password": "4563",
-      "id": 15
-    },
-    {
-      "name": "Manas Das",
-      "email": "manas@gmail.com",
-      "password": "789",
-      "id": 16
     },
     {
       "name": "Slade Singleton",
@@ -110,18 +53,6 @@
       "email": "david@gmail.com",
       "password": "123",
       "id": 20
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 21
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 22
     }
   ],
   "products": [
@@ -251,63 +182,18 @@
       "id": 4
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 5
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 6
-    },
-    {
       "name": "nat",
       "email": "nat@gmail.com",
       "password": "123456789",
       "id": 7
     },
     {
-      "name": "Sajal Devnath",
-      "email": "sajaldevnath96@gmail.com",
-      "password": "4859",
-      "id": 8
-    },
-    {
-      "name": "Sajal Devnath",
-      "email": "sajaldevnath96@gmail.com",
-      "password": "sajal",
-      "id": 9
-    },
-    {
       "name": "natasha",
       "email": "natasha@gmail.com",
       "password": "natasha",
       "id": 10
-    },
-    {
-      "name": "Manas",
-      "email": "dasmanas@gmail.com",
-      "password": "manas",
-      "id": 11
-    },
-    {
-      "name": "Ruchi",
-      "email": "ruchiraj@gmail.com",
-      "password": "789456123",
-      "id": 12
     }
   ],
   "cart": [],
-  "orders": [
-    {
-      "email": "ruchiraj@gmail.com",
-      "address": "Top Floor, Arora Apartment, Law Gate Road, Green Valley, Kapurthala District",
-      "contact": "6945",
-      "totalPrice": 1380,
-      "userId": 12,
-      "id": 1
-    }
-  ]
+  "orders": []
 }

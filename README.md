@@ -1,27 +1,44 @@
-# FlavorKart
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+# FlavorKart 🛒
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+In this project, I developed and deployed a dynamic E-Commerce website leveraging Angular, HTML, CSS, and Bootstrap. The website was designed to provide an interactive and user-friendly experience for customers, allowing them to browse through products, search for specific items, add products to their cart, and easily place orders. To ensure efficient product management, I implemented seamless CRUD operations using JSON server, enabling sellers to effortlessly add, update, and delete products through a streamlined interface. This comprehensive solution aimed to enhance the overall shopping experience while empowering sellers with efficient product management capabilities.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Demo
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+https://flavor-kart.vercel.app/
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### User's Features
+- Customer-oriented features such as browsing, searching, and cart functionality.
+- Easily place orders and complete the purchase process.
+- Seamless shopping experience for customers with intuitive navigation and search capabilities.
+- Optimized the website for responsiveness and compatibility across different devices and screen sizes.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Admin's Features
+- Utilized JSON server for efficient product management and seamless CRUD operations.
+- Provided a user-friendly interface for sellers to effortlessly add, update, and delete products.
+- Streamlined product management processes for sellers to enhance efficiency and productivity.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  ng build
+```
+
+
+## Tech Stack
+
+**Client:** Angular
+
+**Server:** JSON
+

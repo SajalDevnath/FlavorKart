@@ -9,36 +9,36 @@ export class ProductService {
   cartData = new EventEmitter<product[] | []>();
   constructor(private http: HttpClient) {}
   addProduct(data: product) {
-    return this.http.post('http://localhost:3000/products', data);
+    return this.http.post('https://json-server-vercel-eight-steel.vercel.app/products', data);
   }
   productList() {
-    return this.http.get<product[]>('http://localhost:3000/products');
+    return this.http.get<product[]>('https://json-server-vercel-eight-steel.vercel.app/products');
   }
   deleteProduct(id: number) {
-    return this.http.delete(`http://localhost:3000/products/${id}`);
+    return this.http.delete(`https://json-server-vercel-eight-steel.vercel.app/products/${id}`);
   }
 
   getProduct(id: string) {
-    return this.http.get<product>(`http://localhost:3000/products/${id}`);
+    return this.http.get<product>(`https://json-server-vercel-eight-steel.vercel.app/products/${id}`);
   }
   updateProduct(product: product) {
     console.warn(product);
     return this.http.put<product>(
-      `http://localhost:3000/products/${product.id}`,
+      `https://json-server-vercel-eight-steel.vercel.app/products/${product.id}`,
       product
     );
   }
   popularProducts() {
-    return this.http.get<product[]>('http://localhost:3000/products?_limit=3');
+    return this.http.get<product[]>('https://json-server-vercel-eight-steel.vercel.app/products?_limit=3');
   }
 
   kitchenBasics() {
-    return this.http.get<product[]>('http://localhost:3000/products?_limit=8');
+    return this.http.get<product[]>('https://json-server-vercel-eight-steel.vercel.app/products?_limit=8');
   }
 
   searchProducts(query: string) {
     return this.http.get<product[]>(
-      `http://localhost:3000/products?q=${query}`
+      `https://json-server-vercel-eight-steel.vercel.app/products?q=${query}`
     );
   }
 
@@ -68,12 +68,12 @@ export class ProductService {
   }
 
   AddToCart(cartData: cart) {
-    return this.http.post('http://localhost:3000/cart', cartData);
+    return this.http.post('https://json-server-vercel-eight-steel.vercel.app/cart', cartData);
   }
 
   getCartList(userId: number) {
     return this.http
-      .get<product[]>('http://localhost:3000/cart?userId=' + userId, {
+      .get<product[]>('https://json-server-vercel-eight-steel.vercel.app/cart?userId=' + userId, {
         observe: 'response',
       })
       .subscribe((result) => {
@@ -86,32 +86,32 @@ export class ProductService {
   }
 
   removeToCart(cartId: number) {
-    return this.http.delete('http://localhost:3000/cart/' + cartId);
+    return this.http.delete('https://json-server-vercel-eight-steel.vercel.app/cart/' + cartId);
   }
 
   currentCart() {
     let userStore = localStorage.getItem('user');
     let userData = userStore && JSON.parse(userStore);
     return this.http.get<cart[]>(
-      'http://localhost:3000/cart?userId=' + userData.id
+      'https://json-server-vercel-eight-steel.vercel.app/cart?userId=' + userData.id
     );
   }
 
   orderNow(data: order) {
-    return this.http.post('http://localhost:3000/orders', data);
+    return this.http.post('https://json-server-vercel-eight-steel.vercel.app/orders', data);
   }
 
   orderList() {
     let userStore = localStorage.getItem('user');
     let userData = userStore && JSON.parse(userStore);
     return this.http.get<order[]>(
-      'http://localhost:3000/orders?userId=' + userData.id
+      'https://json-server-vercel-eight-steel.vercel.app/orders?userId=' + userData.id
     );
   }
 
   deleteCartItems(cartId: number) {
     return this.http
-      .delete('http://localhost:3000/cart/' + cartId, { observe: 'response' })
+      .delete('https://json-server-vercel-eight-steel.vercel.app/cart/' + cartId, { observe: 'response' })
       .subscribe((result) => {
         if (result) {
           this.cartData.emit([]);
@@ -120,6 +120,6 @@ export class ProductService {
   }
 
   cancelOrder(orderId: number) {
-    return this.http.delete('http://localhost:3000/orders/' + orderId);
+    return this.http.delete('https://json-server-vercel-eight-steel.vercel.app/orders/' + orderId);
   }
 }

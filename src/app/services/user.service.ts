@@ -11,7 +11,7 @@ export class UserService {
   constructor(private http: HttpClient, private router: Router) {}
   userSignUp(user: SignUp) {
     this.http
-      .post('http://localhost:3000/users', user, { observe: 'response' })
+      .post('https://json-server-vercel-eight-steel.vercel.app/users', user, { observe: 'response' })
       .subscribe((result) => {
         console.warn(result);
         if (result) {
@@ -23,7 +23,7 @@ export class UserService {
   userLogin(data: Login) {
     this.http
       .get<SignUp[]>(
-        `http://localhost:3000/users?email=${data.email}&password=${data.password}`,
+        `https://json-server-vercel-eight-steel.vercel.app/users?email=${data.email}&password=${data.password}`,
         { observe: 'response' }
       )
       .subscribe((result) => {

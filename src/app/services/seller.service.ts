@@ -13,7 +13,7 @@ export class SellerService {
   constructor(private http: HttpClient, private router: Router) {}
   userSignUp(data: SignUp) {
     this.http
-      .post('http://localhost:3000/seller', data, {
+      .post('https://json-server-vercel-eight-steel.vercel.app/seller', data, {
         observe: 'response',
       })
       .subscribe((result) => {
@@ -33,7 +33,7 @@ export class SellerService {
     console.warn(data);
     this.http
       .get(
-        `http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
+        `https://json-server-vercel-eight-steel.vercel.app/seller?email=${data.email}&password=${data.password}`,
         { observe: 'response' }
       )
       .subscribe((result: any) => {

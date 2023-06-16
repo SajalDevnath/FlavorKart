@@ -194,6 +194,19 @@
       "id": 10
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "name": "Olive Oil",
+      "price": "640",
+      "info": "Calories: 120 per tablespoon, Fat: 14g, Vitamin E: 10% DV",
+      "category": "Oils & Condiments",
+      "description": "Olive oil is a healthy cooking oil derived from olives. It is rich in monounsaturated fats and adds a distinct flavor to dishes.",
+      "image": "https://th.bing.com/th/id/OIP.kJhTKt9n48mMmSw0Fg5mxAHaFj?w=265&h=197&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "quantity": 1,
+      "userId": 10,
+      "productId": 3,
+      "id": 1
+    }
+  ],
   "orders": []
 }
